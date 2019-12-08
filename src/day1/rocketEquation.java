@@ -11,8 +11,8 @@ public class rocketEquation {
 			74422, 143216, 139349 };
 
 	public static void main(String[] args) {
-
-		System.out.println(fuelForFuel(masses));
+		System.out.println("Part1 answer: "+ massCounterUpper(masses));
+		System.out.println("Part2 answer: "+ fuelForFuel(masses));
 	}
 
 	public static int massCounterUpper(int[] allMasses) {
@@ -22,7 +22,6 @@ public class rocketEquation {
 		for (int mass : allMasses) {
 			total += Math.floor(mass / 3) - 2;
 		}
-		System.out.println(total);
 		return total;
 	}
 
